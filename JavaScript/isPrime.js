@@ -9,4 +9,4 @@ function isPrime(n){
     return count === 0;
 }
 console.log(isPrime(80));
-console.log(isPrime(13));
+console.log(isPrime(6));
