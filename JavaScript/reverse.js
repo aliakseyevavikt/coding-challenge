@@ -1,4 +1,5 @@
 // reverse a string (letters)
+
 // version 1.0
 
 function reverse (str) {
@@ -6,5 +7,9 @@ function reverse (str) {
 }
 console.log(reverse("Hello World"));
 
+//
+
 
 //reverse words in the string
+
+
