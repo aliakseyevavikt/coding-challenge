@@ -1,7 +1,8 @@
-//factorial of n (n!) = n * ... * 4 * 3 * 2 * 1;
-// factorial n! = n * (n -1 ) * (n -2) * ... * 2 * 1;
-// n! = n * (n - 1)!
-
+/* factorial of n
+ n! = n * ... * 4 * 3 * 2 * 1;
+ n! = n * (n - 1 ) * (n - 2) * ... * 2 * 1;
+ n! = n * (n - 1)!
+ */
 
 //version 1.0
 function factorial(num) {
@@ -17,7 +18,7 @@ console.log(factorial(4))
 
 function factorialRecursion (n) {
    if (n === 1) {
-     return 1
+     return 1;
    }
      return   n * factorialRecursion(n - 1);
  }
