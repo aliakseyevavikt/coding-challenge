@@ -1,13 +1,10 @@
-//  task 1 : reverse a string (letters)
+//  task 1 : reverse a string (all letters)
 // "Hello world" => "dlrow olleH"
-
-// version 1.0
 
 function reverse (str) {
     return str.split('').reverse().join('');
 }
 console.log(reverse("Hello World"));
-
 
 // task 2: reverse words in the string
 
@@ -16,7 +13,9 @@ function reverse2 (str2) {
 }
 console.log(reverse2("Hello my dear World"));
 
-// task 3: reverse array without method reverse
+// task 3: reverse only vowels in the string
+
+// task 4: reverse array without method reverse
 
 // version 1.0 (push)
 
