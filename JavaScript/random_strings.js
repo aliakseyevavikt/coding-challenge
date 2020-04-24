@@ -1,22 +1,38 @@
-// Return a piece of string (str) from index start (n) to index end (m).
+// task: return the first word of the string
 
-//version 1.0 with methods
-console.log("task 1 v. 1.0. *********************");
+// version 1.0 without methods
 
-function cutString(str, n, m) {
-    return str.substring(n, m + 1);
-}
-console.log(cutString('Five little monkeys jumping on the bed', 5, 8));
+console.log("v. 1.0. Result: Hello");
 
-//version 2.0 without methods
-console.log("task 1 v. 2.0. *********************");
-
-function cutString1(str1, n, m){
-    let newStr = '';
-    for (let i = n; i <= m; i++) {
-        newStr += str1[i];
+function firstWord (str){
+  let newStr = '';
+  for (let i = 0; i < str.length; i++) {
+  if (str[i] === ' ') {
+    for (let j = 0; j < i; j++) {
+      newStr += str[j];
     }
     return newStr;
+    }
+ }
 }
-console.log(cutString1('Five little monkeys jumping on the bed', 5, 8));
+console.log(firstWord('Hello world'));
+
+// version 2.0 with string methods
+
+console.log("v. 2.0. Result: It");
+function firstWord2 (str2){
+    return str2.slice(0, str2.indexOf(' '));
+}
+
+console.log(firstWord2('It was a good day'));
+
+//version 3.0 with array
+
+console.log("v. 3.0. Result: My");
+
+function firstWord3 (str3){
+    return str3.split(" ")[0];
+}
+
+console.log(firstWord3('My dear friend'));
 
