@@ -7,7 +7,7 @@ function palindrom (str) {
     return str === strPalindrom;
 }
 
-console.log(palindrom("madam"));
+console.log(palindrom("madam im adam"));
 console.log(palindrom("madama"));
 
 //version 2.0: different cases
