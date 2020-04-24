@@ -8,7 +8,7 @@ I
 */
 
 // version 1.0 (without method repeat)
-
+console.log("task 1 v. 1.0 *********************");
 function stairs (numStairs) {
 
 
@@ -17,7 +17,8 @@ function stairs (numStairs) {
 console.log(stairs(7))
 
 // version 2.0 (with method repeat)
-console.log();
+
+console.log("task 1 v. 2.0 *********************");
 
 function stairs1 (numStairs1) {
 
@@ -38,7 +39,7 @@ console.log(stairs1(7))
  */
 
 // version 1.0 (without method repeat)
-console.log();
+console.log("task 2 v. 1.0 *********************");
 
 function stars (num) {
     let str = '';
@@ -57,7 +58,7 @@ console.log(stars(7))
 
 
 // version 2 (with method repeat)
-console.log();
+console.log("task 2 v. 2.0 *********************");
 
 function stars2 (num2) {
     let str2 = '';
@@ -82,6 +83,7 @@ console.log(stars2(5))
 **
 *
  */
+console.log("task 3 v. 1.0 *********************");
 
 function starsReverse(n) {
 

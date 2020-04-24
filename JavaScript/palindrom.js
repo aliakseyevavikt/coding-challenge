@@ -10,7 +10,9 @@ function palindrom (str) {
 console.log(palindrom("madam im adam"));
 console.log(palindrom("madama"));
 
-//version 2.0: different cases
+//version 2.0: without methods
+
+//version 3.0: different cases
 
 
-// version 3.0 different cases, spaces
+// version 4.0 different cases, spaces
