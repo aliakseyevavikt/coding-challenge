@@ -1,5 +1,5 @@
 // 1.
-// Resolve: 7321 = 7+3+2+1 = 13 = 1+3 = 4 (the answer should be onr digit number)
+// Resolve: 7321 = 7+3+2+1 = 13 = 1+3 = 4 (the answer should be onr digit
 
 
 
@@ -40,5 +40,3 @@
 //9.3 Arrays could be different lengths;
 
 
-//10. {{}{}{{}}{{{{}}}}}}
-// 11. [[]]{{[]}}[]{}
