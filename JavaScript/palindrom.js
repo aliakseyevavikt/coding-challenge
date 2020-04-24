@@ -1,4 +1,4 @@
-// Is this word palindrom
+// Is this word a palindrom?
 // Example: madam
 
 function palindrom (str) {
