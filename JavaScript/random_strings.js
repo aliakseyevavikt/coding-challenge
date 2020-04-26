@@ -6,14 +6,12 @@ console.log("v. 1.0. Result: Hello");
 
 function firstWord (str){
   let newStr = '';
-  for (let i = 0; i < str.length; i++) {
-  if (str[i] === ' ') {
-    for (let j = 0; j < i; j++) {
-      newStr += str[j];
-    }
-    return newStr;
-    }
- }
+  let i = 0;
+  while (str[i] !== ' ') {
+      newStr += str[i];
+      i++;
+  }
+  return newStr;
 }
 console.log(firstWord('Hello world'));
 
