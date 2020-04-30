@@ -45,3 +45,8 @@ function nthFibonacci1(n1){
 }
 
 console.log(nthFibonacci1(10)); //34
+
+// task 3.
+
+
+// task 4.
