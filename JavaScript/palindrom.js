@@ -50,3 +50,8 @@ console.log(isPalindrome("pulll up if i pull up"));
 
 
 // version 5.0 different cases, spaces
+
+function isPalindrome(str){
+    str = str.toLowerCase().replace(/\s/g, '').split('');
+    return str.join('') === str.reverse().join('');
+}
