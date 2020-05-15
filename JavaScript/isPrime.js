@@ -5,6 +5,7 @@
 
 //TAsk 1: is "num" Prime?
 
+//version 1:
 function isPrime(num) {
     if (num === 1) return false;
     let count = 0;
@@ -21,6 +22,9 @@ function isPrime(num) {
     //             }
     //             return count === 0 && num !== 1;
     //         }
+// version 2: recursion
+////???????
+
 
 console.log(isPrime(8));
 console.log(isPrime(11));

@@ -15,12 +15,12 @@ console.log(palindrom("madama"));
 console.log();
 console.log("task 1 v. 2.0. Result: true, false ");
 
-function palindrom1(str1){
+function palindrom1(str){
     let strNew = '';
-    for (let i = 0; i < str1.length; i++) {
-        strNew = str1[i] + strNew;
+    for (let i = 0; i < str.length; i++) {
+        strNew = str[i] + strNew;
     }
-    return strNew === str1;
+    return strNew === str;
 }
 console.log(palindrom1('madam'));
 console.log(palindrom1('madan'));
@@ -33,13 +33,13 @@ console.log(palindrom1('madan'));
 console.log();
 console.log("task 3 v. 1.0. Result: true, true, false");
 
-function isPalindrome(str3){
+function isPalindrome(str){
     let strNoSpace = '';
     let strReverse = '';
-    for (let i = 0; i < str3.length; i++) {
-        if (str3[i] !== ' ') {
-            strNoSpace += str3[i];
-            strReverse = str3[i] + strReverse;
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] !== ' ') {
+            strNoSpace += str[i];
+            strReverse = str[i] + strReverse;
         }
     }
     return strNoSpace === strReverse;
@@ -55,3 +55,5 @@ function isPalindrome(str){
     str = str.toLowerCase().replace(/\s/g, '').split('');
     return str.join('') === str.reverse().join('');
 }
+
+//находим количество палиндромов в массиве строк
