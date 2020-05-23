@@ -1,7 +1,6 @@
 /*TASK:
 Return array of numbers from start to end, that could be divided on 3 and 7 at the same time
 */
-
 function multiple (start, end) {
     let arr = [];
     for (let i = start; i <= end; i++) {
