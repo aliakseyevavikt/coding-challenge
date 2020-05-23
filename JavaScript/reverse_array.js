@@ -1,4 +1,4 @@
-// task: reverse array without method reverse
+// TASK: reverse array
 
 // version 1.0 (with method)
 function reverse(arr) {

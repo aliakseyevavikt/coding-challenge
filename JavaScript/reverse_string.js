@@ -1,5 +1,3 @@
-module.exports = {reverse, reverse1, reverse11};
-
 // TASK: reverse a string (all letters) Example: "Hello world" => "dlrow olleH"
 
 // version 1.0 with methods
@@ -27,4 +25,3 @@ function reverse11 (str) {
     }
     return newStr;
 }
-//console.log(reverse11('Hello everyone!'))
