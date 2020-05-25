@@ -13,8 +13,14 @@ console.log(anagram('neght', 'thing'));
 //  version 2 "is the phrase anagram?"
 
 function anagram1 (str1, str2) {
-    str1 = str1.replace(/' '/g, '').split('').sort().join('');
-    str2 = str2.replace(/' '/g, '').split('').sort().join('');
+    str1 = str1.replace(/' '/g, '')
+        .split('')
+        .sort()
+        .join('');
+    str2 = str2.replace(/' '/g, '')
+        .split('')
+        .sort()
+        .join('');
     return  str1 === str2;
 }
 
@@ -24,8 +30,16 @@ console.log(anagram1('eleven plas two', 'twelve plus one'));
 // version 3 "is the phrase with different case anagram?"
 
 function anagram2 (str1, str2) {
-    str1 = str1.toLowerCase().replace(/' '/g, '').split('').sort().join('');
-    str2 = str2.toLowerCase().replace(/' '/g, '').split('').sort().join('');
+    str1 = str1.toLowerCase()
+            .replace(/' '/g, '')
+            .split('')
+            .sort()
+            .join('');
+    str2 = str2.toLowerCase()
+            .replace(/' '/g, '')
+            .split('')
+            .sort()
+            .join('');
     return  str1 === str2;
 }
 
