@@ -1,5 +1,4 @@
-// task1
-// check is this brackets valid or not
+// TASK: check is this brackets valid or not
 // Example: '[]][[[]]'
 // hint if anytime ']' more than '[' => it's invalid
 

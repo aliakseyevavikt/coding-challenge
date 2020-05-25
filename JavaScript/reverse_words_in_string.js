@@ -1,9 +1,10 @@
-// task 2: reverse words in the string
+// TASK: reverse words in the string
 
-console.log();
-console.log("task 2 *");
-
-function reverse2 (str3) {
-    return str3.split(' ').reverse().join(' ');
+//version 1 with methods
+function reverseWords (str) {
+    return str.split(' ').reverse().join(' ');
 }
-console.log(reverse2("Hello my dear World"));
+
+console.log(reverseWords("Hello my dear World"));
+
+//version 2 without method reverse
