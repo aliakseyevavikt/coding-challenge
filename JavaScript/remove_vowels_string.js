@@ -1,4 +1,4 @@
-//remove vowels in the string
+//reverse vowels of a string javascript
 
 //version 1 with RegEx
 function removeVowels(str){
