@@ -1,6 +1,7 @@
-// TASK: check is this brackets valid or not
-// Example: '[]][[[]]'
-// hint if anytime ']' more than '[' => it's invalid
+/* TASK: check is this brackets valid or not
+ Example: '[]][[[]]'
+ hint if anytime ']' more than '[' => it's invalid
+*/
 
 function isBalanced(s) {
   let count1 = 0, count2 = 0;
