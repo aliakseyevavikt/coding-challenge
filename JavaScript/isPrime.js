@@ -45,7 +45,7 @@ console.log(primeNumbers(2, 50));
 
 //TASK 3. How much primes from n1 till m1?
 
-function countOfPrimeNumbers(n, m){
+function countOfPrimeNumbers(n, m) {
     let count = 0;
     for (let i = n; i <= m; i++) {
         if (isPrime(i)) count++;
@@ -55,3 +55,26 @@ function countOfPrimeNumbers(n, m){
 
 console.log(countOfPrimeNumbers(1, 90));
 
+// return all prime element until n
+
+function isPrime(n) {
+    let arr = [];
+    for (let i = 2; i <= n; i++) {
+        arr.push(i);
+    }
+    console.log(arr);
+    let newArr = [];
+    for (let i = 0; i < arr.length; i++) {
+        //  console.log(i);
+        console.log(arr[i]);
+        let count = 0;
+        for (let j = 2; j <= arr[i] / 2; i++) {
+            if (arr[i] % j === 0) count++;
+        }
+        if (count === 0) newArr.push(arr[i]);
+    }
+
+    return newArr;
+}
+
+console.log(isPrime(10));
