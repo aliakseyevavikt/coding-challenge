@@ -22,7 +22,22 @@ console.log(isBalanced('][[[]][][')); // invalid
 
 //version 2
 
-function validParentheses(parens) {
+function validParentheses1(parens) {
+    let sum = 0;
+    for (let i = 0; i < parens.length; i++) {
+        if (parens[i] === '()') {
+            sum++;
+        } else {
+            sum--;
+        }
+        if (sum < 0) return false;
+    }
+    return sum === 0;
+}
+
+//version 3
+
+function validParentheses2(parens) {
     while (parens.includes('()')) {
         parens = parens.replace('()', '');
     }
