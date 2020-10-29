@@ -64,3 +64,21 @@ function sortingBuble(arr) {
 }
 
 console.log(sortingBuble([30, 50, 20, 10, 40]));
+
+// version 4
+
+function bubbleSortInc(arr) {
+    for (let i = 0; i < arr.length - 1; i++) {
+        let swap = 0;
+        for (let j = 0; j < arr.length - 1 - i; j++) {
+            if (arr[j] > arr[j + 1]) {
+                [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]]
+                swap = 1;
+            }
+        }
+        if (swap === 0) break;
+    }
+    return arr;
+}
+
+console.log(bubbleSortInc([3, 8, 2, 9, 1, 0, 19]));
