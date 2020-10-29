@@ -1,18 +1,17 @@
-// --- Directions
-// Check to see if two provided strings are anagrams of eachother.
-// One string is an anagram of another if it uses the same characters
-// in the same quantity. Only consider characters, not spaces
-// or punctuation.  Consider capital letters to be the same as lower case
-// --- Examples
-//   anagrams('rail safety', 'fairy tales') --> True
-//   anagrams('RAIL! SAFETY!', 'fairy tales') --> True
-//
+/* Directions:
+Given a string, return a new string with the reversed order of characters
+--- Examples
+  reverse('apple') === 'leppa'
+  reverse('hello') === 'olleh'
+*/
 
 // version 1.0 with methods
 
 function reverse(str) {
     return str.split('').reverse().join('');
 }
+
+console.log(reverse('safety'));
 
 //version 2.0 without methods
 
@@ -24,6 +23,8 @@ function reverse2(str) {
     return newStr;
 }
 
+console.log(reverse2('safety'));
+
 //version 3.0 without methods
 
 function reverse3(str) {
@@ -34,8 +35,12 @@ function reverse3(str) {
     return newStr;
 }
 
+console.log(reverse3('safety'));
+
 //version 4.0. with reduce
 
-function reverse3(str) {
+function reverse4(str) {
     return str.split('').reduce((res, char) => char + res, '');
 }
+
+console.log(reverse4('safety'));
