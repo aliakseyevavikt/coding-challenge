@@ -1,7 +1,6 @@
 /* Directions
-Check to see if two provided strings are anagrams of eachother.
-One string is an anagram of another if it uses the same characters
-in the same quantity. Only consider characters, not spaces
+Check to see if two provided strings are anagrams of eachother. One string is an anagram of another if it uses
+the same characters in the same quantity. Only consider characters, not spaces
 or punctuation.  Consider capital letters to be the same as lower case
 
   anagrams('rail safety', 'fairy tales') --> True
@@ -86,4 +85,3 @@ function anagrams4(stringA, stringB) {
 
 console.log(anagrams4('he    llo', 'oLelh'));
 console.log(anagrams4('he    llo', 'oLelhs'));
-
