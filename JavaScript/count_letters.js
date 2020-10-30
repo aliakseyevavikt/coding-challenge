@@ -1,1 +1,0 @@
-// count letters in the string
