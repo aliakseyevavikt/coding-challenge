@@ -32,9 +32,8 @@ console.log("###########");
 console.log(pattern1(8, 5));
 
 function pattern2(n, m) {
-    let str = (('*'.repeat(n)) + '\n').repeat(m - 1) +
+    return (('*'.repeat(n)) + '\n').repeat(m - 1) +
         '*'.repeat(n);
-    return str;
 }
 
 console.log("###########");
