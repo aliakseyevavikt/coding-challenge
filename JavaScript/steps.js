@@ -1,45 +1,5 @@
 // Directions:
-
 // TASK 1. Print picture:
-// **********
-// **********
-// **********
-// **********
-
-function pattern(n, m) {
-    let str = '';
-    for (let i = 1; i <= m; i++) {
-        for (let j = 1; j <= n; j++) {
-            str += '*';
-        }
-        if (i !== m) str += '\n';
-    }
-    return str;
-}
-
-console.log(pattern(8, 5));
-
-function pattern1(n, m) {
-    let str = '';
-    for (let i = 1; i <= m; i++) {
-        str += '*'.repeat(n);
-        if (i !== m) str += '\n';
-    }
-    return str;
-}
-
-console.log("###########");
-console.log(pattern1(8, 5));
-
-function pattern2(n, m) {
-    return (('*'.repeat(n)) + '\n').repeat(m - 1) +
-        '*'.repeat(n);
-}
-
-console.log("###########");
-console.log(pattern2(8, 5));
-
-// TASK 2. Print picture:
 // *
 // **
 // ***
@@ -63,8 +23,6 @@ console.log("###########");
 console.log(drawTriangle(1));
 console.log("###########");
 console.log(drawTriangle(5));
-
-// version 2
 
 // version 2 (with method repeat)
 
@@ -100,13 +58,14 @@ function drawTriangle2(num) {
 console.log("###########");
 console.log(drawTriangle2(7))
 
-// TASK 3
+// TASK 2
 //  steps(4) => console.log each string
 //       '#   '
 //       '##  '
 //       '### '
 //       '####'
 
+// version 1 with method repeat
 function steps(n) {
     for (let i = 1; i <= n; i++) {
         let res = '#'.repeat(i) + ' '.repeat(n - i);
@@ -114,9 +73,47 @@ function steps(n) {
     }
 }
 
-console.log("TASk 3 ###########");
-console.log(steps(8))
+console.log("TASk 2-1 ###########");
+console.log(steps(6))
 
+//version 2 without repeat
+
+function steps1(n) {
+    for (let i = 1; i <= n; i++) {
+        let res = '';
+        for (let j = 1; j <= n; j++) {
+            if (j <= i) {
+                res += '#';
+            } else {
+                res += ' ';
+            }
+        }
+
+        console.log(res);
+    }
+}
+
+console.log("TASk 2-2 ###########");
+console.log(steps1(8))
+
+// version 3 with recursion
+
+function steps2(n, row = 0, stair = '') {
+    if (n === row) {
+        return;
+    }
+
+    if (n === stair.length) {
+        console.log(stair);
+        return steps(n, row + 1);
+    }
+
+    const add = stair.length <= row ? '#' : ' ';
+    steps(n, row, stair + add);
+}
+
+console.log("TASk 2-3 ###########");
+console.log(steps1(8))
 
 // /* task3
 // ......
@@ -154,26 +151,7 @@ console.log(steps(8))
 //
 //     console.log(drawTriangle(4));
 
-//   Напишите функцию drawTriangle(n) которая
-// принимает ширину треугольника (здесь 7) n и возвращает строку,
-// содержащую рисунок:
-//     *
-//    ***
-//   *****
-//  *******
 
-// function pattern(n){
-
-
-
-// }
-// console.log(pattern(7));
-
-
-
-
-
-//
 
   //  !!! функция принимает нечетное число n (например n = 7)
 // и выводит строку рисующую ромб
